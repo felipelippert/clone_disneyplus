@@ -1,5 +1,31 @@
-$bgColor: rgb(55, 110, 182);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bgColor: #040714;
+$mainTextColor: silver;
+$secondaryTextcolor: #f9f9f;
 
 body {
     background-color: $bgColor;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $mainTextColor;
+} 
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
 }
