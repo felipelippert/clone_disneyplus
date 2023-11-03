@@ -27,7 +27,7 @@
             <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
             </div>
-            <h3 class="title--small">
+            <h3 class="title--big">
                 As melhores histórias em um só lugar.
             </h3>
             <p>
@@ -169,7 +169,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Imagem Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+            <img src="./dist/images/fundo_rei_leao.png" alt="Imagem Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -225,7 +228,7 @@
         </ul>
     </section>
     <section class="faq">
-        <h2 class="title--small">Perguntas Frequentes</h2>
+        <h2 class="title">Perguntas Frequentes</h2>
         <ul class="faq__questions">
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question title--faq" data-faq-question>
